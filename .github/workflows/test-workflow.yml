@@ -13,3 +13,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3.4.0
+
+      - name: cibuildwheel
+      - uses: pypa/cibuildwheel@d04cacbc9866d432033b1d09142936e6a0e2121a # v2.23.2
+        env:
+          CIBW_PLATFORM: pyodide
