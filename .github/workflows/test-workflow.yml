@@ -15,3 +15,10 @@ jobs:
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3.4.0
       - name: cibuildwheel
         uses: pypa/cibuildwheel@d04cacbc9866d432033b1d09142936e6a0e2121a # v2.23.2
+
+  test-with-wrong-commit-hash:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: cibuildwheel with wrong commit
+        uses: pypa/cibuildwheel@d04cacbc9866d432033b1d09142936e6a0e2121a # v2.23.2
