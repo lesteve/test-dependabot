@@ -21,4 +21,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: cibuildwheel with wrong commit
-        uses: pypa/cibuildwheel@d04cacbc9866d432033b1d09142936e6a0e2121a # v2.23.2
+        uses: pypa/cibuildwheel@6c426a3a17cfcadf4b6048de53653eba55d7ae4f # v2.23.2
